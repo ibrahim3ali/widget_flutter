@@ -8,27 +8,29 @@ class DebugPaintSizeEnabled extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          AbsorbPointer(
-            absorbing: true,
-
-            child: ElevatedButton(
-              onPressed: () {
-                log('Button 1 pressed');
-              },
-              child: const Text('Button 1'),
+      body:Container(
+        child: Row(
+          children: [
+            Column(
+              children: [
+                Icon( Icons.access_alarm),
+                Container(child: Text('data'),)
+              ],
             ),
-          ),
-          const SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              log('Button 2 pressed');
-            },
-            child: const Text('Button 2'),
-          ),
-        ],
+            Column(
+              children: [
+                Icon( Icons.access_alarm),
+                Container(child: Text('data'),)
+              ],
+            ), Column(
+              children: [
+                Icon( Icons.access_alarm),
+                Container(child: Text('data'),)
+              ],
+            ),
+
+          ],
+        ),
       ),
     );
   }
