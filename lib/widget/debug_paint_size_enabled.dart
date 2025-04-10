@@ -2,8 +2,8 @@ import 'dart:developer' show log;
 
 import 'package:flutter/material.dart';
 
-class AbsorbPointerWidget extends StatelessWidget {
-  const AbsorbPointerWidget({super.key});
+class DebugPaintSizeEnabled extends StatelessWidget {
+  const DebugPaintSizeEnabled({super.key});
 
   @override
   Widget build(BuildContext context) {
