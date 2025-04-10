@@ -1,5 +1,3 @@
-import 'dart:developer' show log;
-
 import 'package:flutter/material.dart';
 
 class DebugPaintSizeEnabled extends StatelessWidget {
@@ -7,31 +5,6 @@ class DebugPaintSizeEnabled extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:Container(
-        child: Row(
-          children: [
-            Column(
-              children: [
-                Icon( Icons.access_alarm),
-                Container(child: Text('data'),)
-              ],
-            ),
-            Column(
-              children: [
-                Icon( Icons.access_alarm),
-                Container(child: Text('data'),)
-              ],
-            ), Column(
-              children: [
-                Icon( Icons.access_alarm),
-                Container(child: Text('data'),)
-              ],
-            ),
-
-          ],
-        ),
-      ),
-    );
+    return Scaffold(body: Center(child: Text('data')));
   }
 }
