@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:widget_flutter/widget/debug_paint_size_enabled.dart'
-    show DebugPaintSizeEnabled;
+import 'package:widget_flutter/widget/common_layout_widgets.dart'
+    show CommonLayoutWidgets;
 
-void main() => runApp(DebugPaintSizeEnabled());
+void main() => runApp(
+  MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(body: CommonLayoutWidgets()),
+  ),
+);
