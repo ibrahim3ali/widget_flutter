@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_flutter/widget/grid_view_ex.dart' show GridViewEx;
+import 'package:widget_flutter/widget/slack_ex.dart' show SlackEx;
 
-void main() => runApp(
-  MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(body: GridViewEx()),
-  ),
-);
+void main() =>
+    runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SlackEx()));
