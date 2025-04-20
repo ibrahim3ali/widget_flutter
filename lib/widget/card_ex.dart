@@ -24,12 +24,7 @@ class CardEx extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    CircleAvatar(
-                      radius: 30,
-                      backgroundImage: NetworkImage(
-                        'https://via.placeholder.com/100',
-                      ),
-                    ),
+                    CircleAvatar(radius: 30, child: Center(child: Text('إب'))),
                     SizedBox(width: 16),
                     Expanded(
                       child: Column(
